@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-font: "Jost regular";
+  --secondary-font: "Jost medium";
+}
+@font-face {
+  font-family: "Jost medium";
+  src: url("/assets/fonts/Jost-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Jost regular";
+  src: url("/assets/fonts/Jost-Regular.ttf");
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  width: 100%;
+  min-height: 100dvh;
+  font-family: var(--primary-font);
+}
+
+.home-page {
+  min-height: 100dvh;
+  width: 100%;
+}
