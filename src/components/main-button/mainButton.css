@@ -1,0 +1,11 @@
+.main-button {
+  background-color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

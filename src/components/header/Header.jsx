@@ -1,11 +1,6 @@
-import { useState } from "react"
+import { MenuButton } from "../menuButton/MenuButton"
 import "./header.css"
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const toggleMobileMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
   return (
     <header className="header">
       <div className="content">
@@ -16,7 +11,7 @@ export function Header() {
           width="157px"
           height="27px"
         />
-        <nav className={isMenuOpen ? "active" : ""}>
+        <nav className="main-nav" aria-expanded="false">
           <ul>
             <li>
               <a href="#">our company</a>
@@ -29,18 +24,21 @@ export function Header() {
             </li>
           </ul>
         </nav>
-        <img
-          onClick={toggleMobileMenu}
-          className={isMenuOpen ? `close active` : `close`}
-          src="/assets/shared/mobile/icon-close.svg"
-          alt="close mobile navigation menu"
-        />
-        <img
-          onClick={toggleMobileMenu}
-          className="ham-menu"
-          src="/assets/shared/mobile/icon-hamburger.svg"
-          alt="open mobile navigation menu"
-        />
+        <nav className="mobile-nav" aria-expanded="false">
+          <ul>
+            <li>
+              <a href="#">our company</a>
+            </li>
+            <li>
+              <a href="#">locations</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="overlay"></div>
+        <MenuButton></MenuButton>
       </div>
     </header>
   )
