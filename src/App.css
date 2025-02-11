@@ -45,6 +45,11 @@ html {
   max-height: 843px;
   overflow-y: hidden;
 
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position-y: 6.375rem;
+
   background-color: var(--color-primary);
   color: var(--white);
 
@@ -91,6 +96,9 @@ html {
     padding: 3.75rem;
     padding-bottom: 0;
 
+    background-size: contain;
+    background-position-x: 10rem;
+
     .hero__text {
       display: flex;
       flex-direction: column;
@@ -116,6 +124,8 @@ html {
     max-width: 1110px;
     align-self: center;
     margin: 0 auto;
+
+    background-position: right;
     .hero__text {
       display: flex;
       flex-direction: column;
