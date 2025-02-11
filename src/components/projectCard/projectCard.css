@@ -50,9 +50,6 @@
     height: 100%;
   }
 }
-.project-card.orange-bg .card-text {
-  background-color: rgba(231, 129, 107, 0.8) !important;
-}
 
 @media (min-width: 678px) {
   .project-card {
@@ -64,5 +61,8 @@
   .project-card {
     max-width: 100%;
     min-height: 200px;
+  }
+  .project-card.orange-bg .card-text {
+    background-color: rgba(231, 129, 107, 0.8);
   }
 }
