@@ -1,0 +1,79 @@
+.call-to-action-section {
+  padding-top: 7.5rem;
+  padding-inline: 1.5rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 4rem 1.5rem;
+    border-radius: 15px;
+    color: var(--white);
+    margin-bottom: -58%;
+    position: relative;
+    z-index: 11;
+
+    background: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-color: var(--color-primary);
+    background-size: 300%;
+    background-position-x: -300px;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+
+    h3 {
+      font-size: 2rem;
+      font-family: "Jost medium";
+      line-height: 36px;
+      margin-bottom: 6px;
+    }
+    p {
+      margin-bottom: 2rem;
+      font-size: 0.9375rem;
+      font-family: "Jost regular";
+      line-height: 25px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .call-to-action-section {
+    padding-inline: 2.5rem;
+    max-width: 1110px;
+    margin: 0 auto;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding-inline: 160px;
+      padding-top: 3.5625rem;
+      padding-bottom: 3.5625rem;
+      margin-bottom: -10%;
+
+      background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
+      background-size: cover;
+      background-position: center;
+      background-position-x: 100px;
+
+      h3 {
+        font-size: 2.5rem;
+        line-height: 40px;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+      }
+
+      .main-button {
+        padding: 17px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1;
+        line-height: auto;
+      }
+    }
+  }
+}

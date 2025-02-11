@@ -3,6 +3,7 @@ import { Header } from "./components/header/Header"
 import { MainButton } from "./components/main-button/MainButton"
 import { ProjectCard } from "./components/projectCard/ProjectCard"
 import { Footer } from "./components/footer/Footer.jsx"
+import { CallToAction } from "./components/callToAction/CallToAction.jsx"
 
 function App() {
   return (
@@ -115,6 +116,7 @@ function App() {
           </li>
         </ul>
       </section>
+      <CallToAction></CallToAction>
       <Footer></Footer>
     </div>
   )
