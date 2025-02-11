@@ -1,6 +1,7 @@
 import "./App.css"
 import { Header } from "./components/header/Header"
 import { MainButton } from "./components/main-button/MainButton"
+import { ProjectCard } from "./components/projectCard/ProjectCard"
 
 function App() {
   return (
@@ -28,6 +29,35 @@ function App() {
             />
           </picture>
         </div>
+      </section>
+
+      <section className="section__projects">
+        <ProjectCard
+          styleClass="web orange-bg"
+          title="web design"
+          img="/assets/home/mobile/image-web-design.jpg"
+          imgTablet="/assets/home/tablet/image-web-design.jpg"
+          imgDesktop="/assets/home/desktop/image-web-design-large.jpg"
+          alt="A laptop for web design"
+        ></ProjectCard>
+
+        <ProjectCard
+          styleClass="app"
+          title="app design"
+          img="/assets/home/mobile/image-app-design.jpg"
+          imgTablet="/assets/home/tablet/image-app-design.jpg"
+          imgDesktop="/assets/home/desktop/image-app-design.jpg"
+          alt="A laptop for web design"
+        ></ProjectCard>
+
+        <ProjectCard
+          styleClass="graphic"
+          title="graphic design"
+          img="/assets/home/mobile/image-graphic-design.jpg"
+          imgTablet="/assets/home/tablet/image-graphic-design.jpg"
+          imgDesktop="/assets/home/desktop/image-graphic-design.jpg"
+          alt="A laptop for web design"
+        ></ProjectCard>
       </section>
     </div>
   )
