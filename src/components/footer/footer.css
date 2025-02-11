@@ -14,7 +14,7 @@
   }
 
   .footer-content {
-    min-width: 100%;
+    /* min-width: 100%; */
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -97,6 +97,9 @@
   .footer {
     padding-top: 7rem;
     padding-inline: 2.5rem;
+    display: flex;
+    justify-content: center;
+
     .footer-content header {
       display: flex;
       flex-direction: row;
@@ -128,5 +131,13 @@
     .socials {
       align-self: flex-end;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer .footer-content {
+    padding-top: 4.5rem;
+    min-width: 1110px;
+    max-width: 1110px;
   }
 }
