@@ -212,7 +212,7 @@ html {
   .section__projects {
     max-width: 1110px;
     margin: 0 auto;
-    padding-inline: 2.5rem;
+    padding-inline: 0;
 
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 541px));
