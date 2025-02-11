@@ -1,0 +1,132 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding-top: 15.675rem;
+  padding-bottom: 4rem;
+  padding-inline: 1.5rem;
+  font-family: "Jost medium";
+  z-index: -1;
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .footer-content {
+    min-width: 100%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    padding-top: 2rem;
+  }
+
+  .footer-content header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .footer-nav {
+    width: 100%;
+  }
+  .footer-nav ul {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 0;
+    border-top: 1px solid var(--very-light-grey);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    li a {
+      color: var(--white);
+      text-decoration: none;
+
+      font-size: 0.875rem;
+      font-family: "Jost regular";
+      line-height: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    .direction-card {
+      font-size: 1rem;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    .contact-card {
+      font-size: 1rem;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    .direction-card,
+    .contact-card {
+      color: var(--very-light-grey);
+
+      h5 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+
+    .socials {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .footer {
+    padding-top: 7rem;
+    padding-inline: 2.5rem;
+    .footer-content header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      border-bottom: 1px solid var(--very-light-grey);
+      padding-bottom: 3rem;
+      .logo {
+        margin: 0;
+      }
+      .footer-nav ul {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        padding: 0;
+      }
+    }
+
+    .footer-text {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .socials {
+      align-self: flex-end;
+    }
+  }
+}

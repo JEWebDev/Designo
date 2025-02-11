@@ -27,13 +27,19 @@ export function Header() {
         <nav className="mobile-nav" aria-expanded="false">
           <ul>
             <li>
-              <a href="#">our company</a>
+              <a href="#" tabIndex={-1}>
+                our company
+              </a>
             </li>
             <li>
-              <a href="#">locations</a>
+              <a href="#" tabIndex={-1}>
+                locations
+              </a>
             </li>
             <li>
-              <a href="#">contact</a>
+              <a href="#" tabIndex={-1}>
+                contact
+              </a>
             </li>
           </ul>
         </nav>
