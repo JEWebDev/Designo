@@ -134,10 +134,10 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .footer .footer-content {
     padding-top: 4.5rem;
-    min-width: 1110px;
+    width: 100%;
     max-width: 1110px;
   }
 }
