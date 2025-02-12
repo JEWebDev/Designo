@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import "./projectCard.css"
+import "./navCard.css"
 import { Link } from "react-router"
-export function ProjectCard({
+export function NavCard({
   title,
   img,
   imgTablet,

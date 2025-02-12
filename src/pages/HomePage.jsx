@@ -3,7 +3,7 @@ import { ProjectsNav } from "../layouts/projectsNav/ProjectsNav.jsx"
 import { CallToAction } from "../components/callToAction/CallToAction.jsx"
 import { Navbar } from "../components/navbar/Navbar.jsx"
 import { MainButton } from "../components/main-button/MainButton.jsx"
-import { ProjectCard } from "../components/projectCard/ProjectCard.jsx"
+import { NavCard } from "../components/navCard/NavCard.jsx"
 import { Footer } from "../components/footer/Footer.jsx"
 export function HomePage() {
   return (
@@ -36,7 +36,7 @@ export function HomePage() {
       </div>
 
       <ProjectsNav>
-        <ProjectCard
+        <NavCard
           styleClass="web orange-bg"
           title="web design"
           link="/web-design"
@@ -44,9 +44,9 @@ export function HomePage() {
           imgTablet="/assets/home/tablet/image-web-design.jpg"
           imgDesktop="/assets/home/desktop/image-web-design-large.jpg"
           alt="A laptop for web design"
-        ></ProjectCard>
+        ></NavCard>
 
-        <ProjectCard
+        <NavCard
           styleClass="app"
           title="app design"
           link="/app-design"
@@ -54,9 +54,9 @@ export function HomePage() {
           imgTablet="/assets/home/tablet/image-app-design.jpg"
           imgDesktop="/assets/home/desktop/image-app-design.jpg"
           alt="A laptop for web design"
-        ></ProjectCard>
+        ></NavCard>
 
-        <ProjectCard
+        <NavCard
           styleClass="graphic"
           title="graphic design"
           link="/graphic-design"
@@ -64,7 +64,7 @@ export function HomePage() {
           imgTablet="/assets/home/tablet/image-graphic-design.jpg"
           imgDesktop="/assets/home/desktop/image-graphic-design.jpg"
           alt="A laptop for web design"
-        ></ProjectCard>
+        ></NavCard>
       </ProjectsNav>
 
       <section className="section__service-description">
