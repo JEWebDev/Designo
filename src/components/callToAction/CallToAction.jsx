@@ -11,7 +11,7 @@ export function CallToAction() {
             how our expertise can help your business grow.
           </p>
         </div>
-        <MainButton theme="light" link="#">
+        <MainButton theme="light" path="/contact">
           get in touch
         </MainButton>
       </div>

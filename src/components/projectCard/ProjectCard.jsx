@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./projectCard.css"
+import { Link } from "react-router"
 export function ProjectCard({
   title,
   img,
@@ -7,18 +8,19 @@ export function ProjectCard({
   imgDesktop,
   alt,
   styleClass,
+  link,
 }) {
   return (
     <div className={styleClass ? `project-card ${styleClass}` : `project-card`}>
       <div className="card-text">
         <h2>{title}</h2>
-        <a href="#" className="project-link">
-          view projects{" "}
+        <Link to={link} className="project-link">
+          view projects
           <img
             src="/assets/shared/desktop/icon-right-arrow.svg"
             alt="right arrow"
           />
-        </a>
+        </Link>
       </div>
       <picture>
         <source media="(min-width: 1024px)" srcSet={imgDesktop} />

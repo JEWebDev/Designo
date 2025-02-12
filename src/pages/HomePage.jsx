@@ -1,11 +1,9 @@
-import "./App.css"
-import { Header } from "./components/header/Header"
-import { MainButton } from "./components/main-button/MainButton"
-import { ProjectCard } from "./components/projectCard/ProjectCard"
-import { Footer } from "./components/footer/Footer.jsx"
-import { CallToAction } from "./components/callToAction/CallToAction.jsx"
-
-function App() {
+import { CallToAction } from "../components/callToAction/CallToAction"
+import { Header } from "../components/header/Header"
+import { MainButton } from "../components/main-button/MainButton"
+import { ProjectCard } from "../components/projectCard/ProjectCard"
+import { Footer } from "../components/footer/Footer"
+export function HomePage() {
   return (
     <div className="home-page">
       <Header></Header>
@@ -18,7 +16,7 @@ function App() {
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <MainButton>learn more</MainButton>
+            <MainButton path="/about">learn more</MainButton>
           </div>
           <div className="hero__img">
             <picture>
@@ -39,6 +37,7 @@ function App() {
         <ProjectCard
           styleClass="web orange-bg"
           title="web design"
+          link="/web-design"
           img="/assets/home/mobile/image-web-design.jpg"
           imgTablet="/assets/home/tablet/image-web-design.jpg"
           imgDesktop="/assets/home/desktop/image-web-design-large.jpg"
@@ -48,6 +47,7 @@ function App() {
         <ProjectCard
           styleClass="app"
           title="app design"
+          link="/app-design"
           img="/assets/home/mobile/image-app-design.jpg"
           imgTablet="/assets/home/tablet/image-app-design.jpg"
           imgDesktop="/assets/home/desktop/image-app-design.jpg"
@@ -57,6 +57,7 @@ function App() {
         <ProjectCard
           styleClass="graphic"
           title="graphic design"
+          link="/graphic-design"
           img="/assets/home/mobile/image-graphic-design.jpg"
           imgTablet="/assets/home/tablet/image-graphic-design.jpg"
           imgDesktop="/assets/home/desktop/image-graphic-design.jpg"
@@ -121,5 +122,3 @@ function App() {
     </div>
   )
 }
-
-export default App

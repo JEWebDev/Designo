@@ -1,4 +1,5 @@
 import { MenuButton } from "../menuButton/MenuButton"
+import { Link } from "react-router"
 import "./header.css"
 export function Header() {
   return (
@@ -14,13 +15,13 @@ export function Header() {
         <nav className="main-nav" aria-expanded="false">
           <ul>
             <li>
-              <a href="#">our company</a>
+              <Link to="/about">our company</Link>
             </li>
             <li>
-              <a href="#">locations</a>
+              <Link to="/locations">locations</Link>
             </li>
             <li>
-              <a href="#">contact</a>
+              <Link to="/contact">contact</Link>
             </li>
           </ul>
         </nav>
