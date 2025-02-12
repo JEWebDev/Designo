@@ -1,3 +1,10 @@
+import { Navbar } from "../components/navbar/Navbar.jsx"
 export function ContactPage() {
-  return <h1>Contact</h1>
+  return (
+    <div className="contact-page">
+      <div className="web-design-page">
+        <Navbar></Navbar>
+      </div>
+    </div>
+  )
 }

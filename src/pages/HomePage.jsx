@@ -1,8 +1,10 @@
-import { CallToAction } from "../components/callToAction/CallToAction"
-import { Navbar } from "../components/header/Navbar.jsx"
-import { MainButton } from "../components/main-button/MainButton"
-import { ProjectCard } from "../components/projectCard/ProjectCard"
-import { Footer } from "../components/footer/Footer"
+import { ProjectsNav } from "../layouts/projectsNav/ProjectsNav.jsx"
+
+import { CallToAction } from "../components/callToAction/CallToAction.jsx"
+import { Navbar } from "../components/navbar/Navbar.jsx"
+import { MainButton } from "../components/main-button/MainButton.jsx"
+import { ProjectCard } from "../components/projectCard/ProjectCard.jsx"
+import { Footer } from "../components/footer/Footer.jsx"
 export function HomePage() {
   return (
     <div className="home-page">
@@ -33,7 +35,7 @@ export function HomePage() {
         </section>
       </div>
 
-      <section className="section__projects">
+      <ProjectsNav>
         <ProjectCard
           styleClass="web orange-bg"
           title="web design"
@@ -63,7 +65,7 @@ export function HomePage() {
           imgDesktop="/assets/home/desktop/image-graphic-design.jpg"
           alt="A laptop for web design"
         ></ProjectCard>
-      </section>
+      </ProjectsNav>
 
       <section className="section__service-description">
         <ul className="service__perks">

@@ -1,3 +1,8 @@
+import { Navbar } from "../components/navbar/Navbar.jsx"
 export function AppDesignPage() {
-  return <h1>App Design</h1>
+  return (
+    <div className="web-design-page">
+      <Navbar></Navbar>
+    </div>
+  )
 }

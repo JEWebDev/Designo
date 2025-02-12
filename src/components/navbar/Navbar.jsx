@@ -5,13 +5,15 @@ export function Navbar() {
   return (
     <header className="header">
       <div className="content">
-        <img
-          className="logo"
-          src="/assets/shared/desktop/logo-dark.png"
-          alt="designo logo"
-          width="157px"
-          height="27px"
-        />
+        <Link to="/">
+          <img
+            className="logo"
+            src="/assets/shared/desktop/logo-dark.png"
+            alt="designo logo"
+            width="157px"
+            height="27px"
+          />
+        </Link>
         <nav className="main-nav" aria-expanded="false">
           <ul>
             <li>

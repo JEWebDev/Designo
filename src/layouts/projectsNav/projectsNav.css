@@ -1,0 +1,33 @@
+.section__projects {
+  padding: 7.5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section__projects {
+    padding-inline: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__projects {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 541px));
+    grid-template-rows: repeat(2, minmax(200px, 308px));
+
+    .project-card {
+      height: 100%;
+    }
+    .project-card.web {
+      max-height: 640px;
+      grid-row: 1 / span 3;
+    }
+  }
+}

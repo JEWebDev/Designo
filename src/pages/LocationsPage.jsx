@@ -1,3 +1,9 @@
+import { Navbar } from "../components/navbar/Navbar"
+
 export function LocationsPage() {
-  return <h1>Locations</h1>
+  return (
+    <div className="locations-page">
+      <Navbar></Navbar>
+    </div>
+  )
 }
