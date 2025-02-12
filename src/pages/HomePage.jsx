@@ -1,12 +1,12 @@
 import { CallToAction } from "../components/callToAction/CallToAction"
-import { Header } from "../components/header/Header"
+import { Navbar } from "../components/header/Navbar.jsx"
 import { MainButton } from "../components/main-button/MainButton"
 import { ProjectCard } from "../components/projectCard/ProjectCard"
 import { Footer } from "../components/footer/Footer"
 export function HomePage() {
   return (
     <div className="home-page">
-      <Header></Header>
+      <Navbar></Navbar>
       <div className="hero-wrapper">
         <section className="section__hero">
           <div className="hero__text">

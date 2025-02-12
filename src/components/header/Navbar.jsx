@@ -1,7 +1,7 @@
 import { MenuButton } from "../menuButton/MenuButton"
 import { Link } from "react-router"
-import "./header.css"
-export function Header() {
+import "./navbar.css"
+export function Navbar() {
   return (
     <header className="header">
       <div className="content">
