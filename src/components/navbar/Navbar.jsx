@@ -30,19 +30,19 @@ export function Navbar() {
         <nav className="mobile-nav" aria-expanded="false">
           <ul>
             <li>
-              <a href="#" tabIndex={-1}>
+              <Link to="/about" tabIndex={-1}>
                 our company
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" tabIndex={-1}>
+              <Link to="/locations" tabIndex={-1}>
                 locations
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" tabIndex={-1}>
+              <Link to="/contact" tabIndex={-1}>
                 contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

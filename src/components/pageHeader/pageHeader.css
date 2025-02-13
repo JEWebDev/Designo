@@ -1,0 +1,66 @@
+.page-header {
+  .content {
+    background-color: var(--color-primary);
+    background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    h1,
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 1rem + 5vw, 3rem);
+      font-weight: 500;
+      line-height: 36px;
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 1rem;
+      max-width: 95%;
+    }
+  }
+
+  .content .content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .page-header {
+    padding-inline: 2.5rem;
+    .content {
+      background-position: right;
+      border-radius: 1rem;
+    }
+  }
+
+  .content-text {
+    max-width: 55%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-header {
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-inline: 0;
+  }
+  .content-text {
+    max-width: 35%;
+  }
+}

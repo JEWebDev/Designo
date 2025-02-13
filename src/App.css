@@ -6,6 +6,7 @@
 :root {
   --color-primary: #e7816b;
   --very-light-grey: #979797;
+  --pale-white: #fdf3f0;
 
   --primary-font: "Jost regular";
   --secondary-font: "Jost medium";
@@ -88,8 +89,8 @@ html {
 }
 
 .section__service-description {
-  padding: 0 1.5rem;
-  padding-bottom: 7.5rem;
+  padding-inline: 1.5rem;
+  padding-top: 7.5rem;
 
   .service__perks {
     display: flex;
@@ -129,6 +130,10 @@ html {
   }
 }
 
+.web-design-page {
+  min-width: 100%;
+  min-height: 100dvh;
+}
 @media (min-width: 768px) {
   .hero-wrapper {
     padding-inline: 2.5rem;
