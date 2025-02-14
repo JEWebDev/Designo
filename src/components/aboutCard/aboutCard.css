@@ -59,6 +59,11 @@
       .about-text {
         padding: 0 68px 64px 68px;
         gap: 2rem;
+
+        h2,
+        p {
+          text-align: left;
+        }
       }
     }
   }
@@ -84,7 +89,7 @@
         padding: 0;
         padding-inline: 95px 82px;
 
-        h1,
+        h2,
         p {
           text-align: left;
         }
