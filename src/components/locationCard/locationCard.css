@@ -1,0 +1,50 @@
+.locations {
+  margin: 120px 0 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.location-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  img {
+    background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+  }
+
+  .location-text {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    gap: 2rem;
+
+    h3 {
+      letter-spacing: 5px;
+    }
+  }
+  .location-link {
+    display: block;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 1rem 1.125rem;
+    border-radius: 0.5rem;
+
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .locations {
+    margin: 160px auto;
+    max-width: 1110px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.875rem;
+  }
+}

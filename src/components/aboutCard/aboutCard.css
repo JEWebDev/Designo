@@ -1,0 +1,119 @@
+.pale-bg .content {
+  background-color: var(--pale-white);
+  h2 {
+    color: var(--color-primary);
+  }
+}
+.orange-bg .content {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.about-card {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    picture,
+    img {
+      width: 100%;
+    }
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-inline: 1.5rem;
+      padding-bottom: 5rem;
+      h2,
+      p {
+        text-align: center;
+        line-height: 26px;
+      }
+
+      h2 {
+        font-size: clamp(2rem, 1rem + 5vw, 3rem);
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .about-card:nth-child(n + 3) {
+    margin-top: 120px;
+  }
+  .about-card {
+    padding-inline: 2.5rem;
+    .content {
+      border-radius: 1rem;
+      picture,
+      img {
+        min-height: 320px;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+
+      .about-text {
+        padding: 0 68px 64px 68px;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-card {
+    max-width: 1110px;
+    max-height: 480px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 1rem;
+
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+
+      .about-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        padding-inline: 95px 82px;
+
+        h1,
+        p {
+          text-align: left;
+        }
+
+        p {
+          font-size: 15px;
+          text-wrap: wrap;
+          line-height: 26px;
+          max-width: 458px;
+        }
+      }
+
+      picture,
+      img {
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        max-width: 476px;
+        max-height: 480px;
+      }
+    }
+  }
+  .about-card .content.row-reverse {
+    flex-direction: row-reverse;
+
+    picture img {
+      border-radius: 0;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+  }
+}
