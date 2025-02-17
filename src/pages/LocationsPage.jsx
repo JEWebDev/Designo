@@ -3,20 +3,28 @@ import { CallToAction } from "../components/callToAction/CallToAction.jsx"
 import { Footer } from "../components/footer/Footer.jsx"
 
 import "../locations.css"
+import "leaflet/dist/leaflet.css"
+import { MapContainer, TileLayer } from "react-leaflet"
 export function LocationsPage() {
   return (
     <div className="locations-page">
       <Navbar></Navbar>
 
       <section className="locations-section">
-        <div className="map Canada">
-          <picture>
+        <div className="map Canada" id="Canada">
+          <MapContainer center={[43.6440066, -79.3971137]} zoom={13}>
+            <TileLayer
+              attribution="Open Street View"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+          </MapContainer>
+          {/* <picture>
             <source
               media="(min-width: 700px)"
               srcSet="/assets/locations/tablet/image-map-canada.png"
             />
             <img src="/assets/locations/desktop/image-map-canada.png" alt="" />
-          </picture>
+          </picture> */}
         </div>
 
         <div className="location-info c">
@@ -37,8 +45,14 @@ export function LocationsPage() {
           </div>
         </div>
 
-        <div className="map Australia">
-          <picture>
+        <div className="map Australia" id="Australia">
+          <MapContainer center={[-30.3294275, 149.7856209]} zoom={13}>
+            <TileLayer
+              attribution="Open Street View"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+          </MapContainer>
+          {/* <picture>
             <source
               media="(min-width: 700px)"
               srcSet="/assets/locations/tablet/image-map-australia.png"
@@ -47,7 +61,7 @@ export function LocationsPage() {
               src="/assets/locations/desktop/image-map-australia.png"
               alt=""
             />
-          </picture>
+          </picture> */}
         </div>
 
         <div className="location-info a">
@@ -68,8 +82,14 @@ export function LocationsPage() {
           </div>
         </div>
 
-        <div className="map united-kingdom">
-          <picture>
+        <div className="map united-kingdom" id="united-kingdom">
+          <MapContainer center={[53.7102644, -1.360203]} zoom={13}>
+            <TileLayer
+              attribution="Open Street View"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+          </MapContainer>
+          {/* <picture>
             <source
               media="(min-width: 700px)"
               srcSet="/assets/locations/tablet/image-map-uk.png"
@@ -78,7 +98,7 @@ export function LocationsPage() {
               src="/assets/locations/desktop/image-map-united-kingdom.png"
               alt=""
             />
-          </picture>
+          </picture> */}
         </div>
 
         <div className="location-info u">
