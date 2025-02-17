@@ -80,6 +80,7 @@
 
     display: grid;
     grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(auto-fit, minmax(326px, 1fr));
     column-gap: 30px;
     row-gap: 2rem;
 
