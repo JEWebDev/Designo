@@ -27,7 +27,7 @@ export function LocationsPage() {
           </picture> */}
         </div>
 
-        <div className="location-info c">
+        <div className="location-info c" id="Canada">
           <h2>Canada</h2>
 
           <div className="wrapper">
@@ -45,7 +45,7 @@ export function LocationsPage() {
           </div>
         </div>
 
-        <div className="map Australia" id="Australia">
+        <div className="map Australia">
           <MapContainer center={[-30.3294275, 149.7856209]} zoom={13}>
             <TileLayer
               attribution="Open Street View"
@@ -64,7 +64,7 @@ export function LocationsPage() {
           </picture> */}
         </div>
 
-        <div className="location-info a">
+        <div className="location-info a" id="Australia">
           <h2>Australia</h2>
 
           <div className="wrapper">
@@ -82,7 +82,7 @@ export function LocationsPage() {
           </div>
         </div>
 
-        <div className="map united-kingdom" id="united-kingdom">
+        <div className="map united-kingdom">
           <MapContainer center={[53.7102644, -1.360203]} zoom={13}>
             <TileLayer
               attribution="Open Street View"
@@ -101,7 +101,7 @@ export function LocationsPage() {
           </picture> */}
         </div>
 
-        <div className="location-info u">
+        <div className="location-info u" id="united-kingdom">
           <h2>United Kingdom</h2>
 
           <div className="wrapper">
