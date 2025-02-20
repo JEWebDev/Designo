@@ -37,6 +37,12 @@
 
     font-size: 1.25rem;
   }
+
+  .location-link:hover {
+    transition: all 0.2s linear;
+    background-color: var(--color-accent);
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1024px) {

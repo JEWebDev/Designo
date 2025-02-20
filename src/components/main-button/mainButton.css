@@ -11,3 +11,10 @@
   text-decoration: none;
   color: black;
 }
+
+.main-button:hover {
+  transition: all 200ms linear;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: white;
+}

@@ -51,6 +51,12 @@
   }
 }
 
+.project-card:hover .card-text {
+  transition: background-color 0.2s linear;
+  background-color: rgba(231, 129, 107, 0.8);
+  cursor: pointer;
+}
+
 @media (min-width: 678px) {
   .project-card {
     height: 200px;
@@ -61,8 +67,5 @@
   .project-card {
     max-width: 100%;
     min-height: 200px;
-  }
-  .project-card.orange-bg .card-text {
-    background-color: rgba(231, 129, 107, 0.8);
   }
 }

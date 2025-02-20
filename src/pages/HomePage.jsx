@@ -37,7 +37,7 @@ export function HomePage() {
 
       <ProjectsNav>
         <NavCard
-          styleClass="web orange-bg"
+          styleClass="web"
           title="web design"
           link="/web-design"
           img="/assets/home/mobile/image-web-design.jpg"

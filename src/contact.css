@@ -90,6 +90,12 @@
       border-radius: 1rem;
       align-self: center;
     }
+
+    button:hover {
+      transition: all 0.2s linear;
+      background-color: var(--color-accent);
+      color: var(--white);
+    }
   }
 }
 
@@ -111,9 +117,8 @@
       }
       .text p {
         font-size: 1rem;
-        max-width: 78%;
+        max-width: 98%;
       }
-
       #contact-form input,
       #contact-form textarea {
         font-size: 1.2rem;
@@ -135,7 +140,10 @@
     #contact-form button {
       align-self: flex-end;
     }
-
+    .text p {
+      font-size: 1rem;
+      max-width: 78%;
+    }
     #contact-form button:hover {
       cursor: pointer;
     }

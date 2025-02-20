@@ -25,6 +25,19 @@
     }
   }
 }
+
+.card:hover {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  background-color: var(--color-primary);
+}
+
+.card:hover .card-text h3,
+.card:hover .card-text p {
+  transition: all 0.2s ease-out;
+  color: white;
+}
+
 @media (min-width: 768px) {
   .card {
     display: flex;
