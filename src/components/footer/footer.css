@@ -118,6 +118,11 @@
         align-items: center;
 
         padding: 0;
+
+        li:hover a {
+          text-decoration: underline;
+          text-decoration-color: var(--very-light-grey);
+        }
       }
     }
 

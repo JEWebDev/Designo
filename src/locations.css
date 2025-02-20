@@ -13,6 +13,8 @@
 
 .location-info {
   background-color: var(--pale-white);
+  background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-position-y: -50px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -58,6 +60,9 @@
   }
 
   .location-info {
+    background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-size: contain;
+    background-position-y: 0;
     border-radius: 1rem;
     padding-left: 75px;
     align-items: flex-start;
@@ -96,7 +101,6 @@
       object-fit: cover;
     }
   }
-
   .location-info:nth-child(2),
   .location-info:nth-child(4) {
     margin-bottom: 0;

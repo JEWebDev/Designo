@@ -1,5 +1,6 @@
 .contact-section .content {
   background-color: var(--color-primary);
+  background-image: url("/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
   padding: 72px 1.5rem;
   color: white;
 
@@ -106,6 +107,11 @@
       border-radius: 1rem;
       padding-inline: 58px;
 
+      background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+      background-repeat: no-repeat;
+      background-position-x: -100px;
+      background-position-y: -10px;
+
       .text {
         display: flex;
         flex-direction: column;
@@ -129,6 +135,11 @@
 
 @media (min-width: 1024px) {
   .contact-section .content {
+    background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -90px;
+
     padding-top: 52px;
     padding-bottom: 52px;
     justify-content: center;

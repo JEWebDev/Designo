@@ -1,4 +1,5 @@
 .pale-bg .content {
+  background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
   background-color: var(--pale-white);
   h2 {
     color: var(--color-primary);
@@ -6,7 +7,11 @@
 }
 .orange-bg .content {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--white);
+  background-image: url("/assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+  background-size: 800px;
+  background-position-x: -450px;
+  background-position-y: -680px;
 }
 
 .about-card {
@@ -14,6 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+
     picture,
     img {
       width: 100%;
@@ -42,6 +48,24 @@
 }
 
 @media (min-width: 600px) {
+  .pale-bg .content {
+    background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-color: var(--pale-white);
+    h2 {
+      color: var(--color-primary);
+    }
+  }
+  .orange-bg .content {
+    background-size: contain;
+    background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-position: top;
+    background-position-x: -100px;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+  }
   .about-card:nth-child(n + 3) {
     margin-top: 120px;
   }
@@ -60,9 +84,8 @@
         padding: 0 68px 64px 68px;
         gap: 2rem;
 
-        h2,
-        p {
-          text-align: left;
+        h2 {
+          text-align: center;
         }
       }
     }
@@ -70,9 +93,25 @@
 }
 
 @media (min-width: 1024px) {
+  .pale-bg .content {
+    background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 250px;
+    background-color: var(--pale-white);
+    h2 {
+      color: var(--color-primary);
+    }
+  }
+
+  .orange-bg .content {
+    background-size: 640px;
+    background-position-x: -5px;
+    background-position-y: -150px;
+  }
   .about-card {
     max-width: 1110px;
-    max-height: 480px;
+    max-height: 640px;
     padding: 0;
     margin: 0 auto;
     border-radius: 1rem;
@@ -119,6 +158,16 @@
       border-radius: 0;
       border-top-right-radius: 1rem;
       border-bottom-right-radius: 1rem;
+    }
+  }
+  .about-card:not(.about-card:first-child) {
+    .content {
+      height: 640px;
+
+      picture,
+      img {
+        max-height: 100%;
+      }
     }
   }
 }

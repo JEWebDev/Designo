@@ -40,7 +40,6 @@ html {
   width: 100%;
   position: relative;
 }
-
 .section__hero {
   display: flex;
   flex-direction: column;
