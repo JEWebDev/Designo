@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://jewebdev-designo.netlify.app)
+- Solution URL: [frontend mentor solution](https://www.frontendmentor.io/solutions/designo-multi-page-website-R6lrH_BqAG)
+- Live Site URL: [Live preview](https://jewebdev-designo.netlify.app)
 
 ## My process
 
