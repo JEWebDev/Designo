@@ -3,7 +3,69 @@ import { CallToAction } from "../components/callToAction/CallToAction.jsx"
 import { Footer } from "../components/footer/Footer.jsx"
 import { LocationCard } from "../components/locationCard/LocationCard.jsx"
 import "../contact.css"
+
+import { formSchema } from "../schemas/formSchema.js"
+import { useState } from "react"
 export function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const validateForm = () => {
+    const result = formSchema.safeParse(formData)
+    if (result.success) {
+      setErrors({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      })
+      return true
+    } else {
+      const newErrors = {}
+      result.error.errors.forEach((error) => {
+        newErrors[error.path[0]] = error.message
+      })
+      setErrors(newErrors)
+      console.log(result)
+      return false
+    }
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    if (validateForm()) {
+      console.log("Form submitted")
+      console.log(formData)
+
+      //reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      })
+    }
+  }
   return (
     <div className="contact-page">
       <div className="web-design-page">
@@ -20,24 +82,61 @@ export function ContactPage() {
               </p>
             </div>
 
-            <form id="contact-form">
+            <form id="contact-form" onSubmit={handleSubmit}>
               <label htmlFor="name" aria-label="name"></label>
-              <input type="text" name="name" placeholder="Name" required />
+              <div className="wrapper">
+                <input
+                  className={errors.name ? "error" : ""}
+                  type="text"
+                  name="name"
+                  id="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Name"
+                />
+                {errors.name && <p className="error-text">{errors.name}</p>}
+              </div>
               <label htmlFor="email" aria-label="email"></label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-              />
+              <div className="wrapper">
+                <input
+                  className={errors.email ? "error" : ""}
+                  type="email"
+                  name="email"
+                  id="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email Address"
+                />
+                {errors.email && <p className="error-text">{errors.email}</p>}
+              </div>
               <label htmlFor="phone" aria-label="phone number"></label>
-              <input type="tel" name="phone" placeholder="Phone" required />
-              <label htmlFor="message" aria-label="message"></label>
-              <textarea
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Phone"
+              />
+              <label
+                htmlFor="message"
                 name="message"
                 id="message"
-                placeholder="Your Message"
-              ></textarea>
+                aria-label="message"
+              ></label>
+              <div className="wrapper">
+                <textarea
+                  className={errors.message ? "error" : ""}
+                  name="message"
+                  id="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Your Message"
+                ></textarea>
+                {errors.message && (
+                  <p className="error-text">{errors.message}</p>
+                )}
+              </div>
               <button>submit</button>
             </form>
           </div>
